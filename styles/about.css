@@ -1,0 +1,339 @@
+body {
+    background-color: #c7ccdb;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+}
+
+.primary-color {
+    background-color: #011638;
+}
+.text-primary-color {
+    color: white;
+}
+.text-secondary-color {
+    color: #7ea3f1;
+}
+.text-third-color {
+    color: #011638;
+}
+
+.navbar {
+    /* background-color: #ced4da; */
+    /* background-color: #d0d6d6; */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.custom-navbar .nav-item {
+    transition: transform 0.5s ease, box-shadow 0.5s ease-out;
+    /* color: white; */
+    /* background-color: #ced4da; */
+    /* background-color: #d0d6d6; */
+    padding-left: 45px;
+    /* padding for the navbar items must changed for hover effect */
+    padding-right: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.nav-link {
+    /* color: white; */
+    font-size: 1.25em;
+}
+
+.nav-item:hover .nav-link {
+    color: #7ea3f1;
+}
+
+.custom-navbar .nav-item:hover {
+    transform: translateY(10px);
+    /* background-color: #ced4da; */
+    /* background-color: #d0d6d6; */
+    padding-left: 45px;
+    padding-right: 45px;
+    box-shadow: 0px -20px #7ea3f1;
+}
+
+.aboutHeadSection {
+    margin-top: 8em;
+    margin-bottom: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+    /* background-color: #ced4da; */
+    /* background-color: #d0d6d6; */
+    transition: box-shadow 0.5s ease-out, transform 0.5s ease, background-color 0.5s ease;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.25s;
+}
+
+@media (max-width: 768px) {
+    .aboutHeadSection {
+        margin-top: 20em;
+        /* Increase this value as needed to push the section down */
+    }
+}
+
+@keyframes spreadUnderline {
+    from {
+        width: 0;
+        transform: translateX(-50%);
+    }
+
+    to {
+        width: 100%;
+        /* Full width of the text */
+        transform: translateX(-50%);
+        /* Keep it centered */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.aboutHeadSection #aboutHeader1,
+#aboutHeader2 {
+    transition: color 0.5s ease;
+}
+
+.aboutHeadSection:hover {
+    box-shadow: 0px 10px #7ea3f1;
+    transform: translateY(-10px);
+    /* background-color: #ced4da; */
+    /* background-color: #d0d6d6; */
+}
+
+.aboutHeadSection:hover #aboutHeader1 {
+    color: #7ea3f1;
+}
+
+.aboutHeadSection:hover #aboutHeader2 {
+    color: #7ea3f1;
+}
+
+
+#aboutHeader1 {
+    font-size: 5.5em;
+    font-weight: 100;
+    /* color: white; */
+    position: relative;
+    display: inline-block;
+}
+
+#aboutHeader1::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    /* Adjust based on your design */
+    left: 50%;
+    /* Start from the center */
+    transform: translateX(-50%);
+    /* Center the pseudo-element */
+    width: 0;
+    /* Start with no underline visible */
+    height: 2.5px;
+    /* Thickness of the underline */
+    background-color: white;
+    /* Color of the underline */
+    animation: spreadUnderline 1.5s ease-out forwards;
+    /* Apply the custom animation */
+}
+
+#aboutHeader2 {
+    font-size: 1.75em;
+    font-weight: 200;
+    /* color: white; */
+}
+
+.aboutBody {
+    /* background-color: #ced4da; */
+    background-color: #d0d6d6;
+    margin-bottom: 10em;
+}
+
+.headshot-pic {
+    display: block;
+    width: 100%;
+    max-width: 20em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: 50px;
+    border: solid 2.5px whitesmoke;
+    transition: transform 0.5s ease, box-shadow 0.5s ease-out;
+}
+
+.headshot-pic:hover {
+    transform: translate(10px, -10px);
+    box-shadow: -10px 10px #7ea3f1;
+}
+
+#aboutMeHeader {
+    font-size: 4em;
+    font-weight: 100;
+    /* color: white; */
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    text-align: center;
+    border-bottom: 2px solid white; /* Add underline */
+    display: inline-block; /* Ensure underline fits the text width */
+}
+
+#aboutMeText {
+    font-size: 1.5em;
+    font-weight: 250;
+    /* color: white; */
+    text-align: left;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.leftAboutCol {
+    margin-right: 200px;
+    /* background-color: #d0d6d6; */
+    transition: transform 1s ease, box-shadow 1s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-top-right-radius: 15px; /* Add border-radius to the top-right corner */
+    border-bottom-right-radius: 15px;
+    /* Smooth transition for transform and box-shadow */
+    animation: fadeIn 0.75s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.leftAboutCol:hover {
+    transform: translateX(12em);
+    /* Slide to the right by 20px on hover */
+    box-shadow: -12em 0px #7ea3f1;
+    /* Blue box shadow on the left */
+}
+
+.rightAboutCol {
+    position: relative;
+    text-align: center;
+    margin-left: 200px;
+    /* background-color: #d0d6d6; */
+    transition: transform 1s ease, box-shadow 1s ease;
+    border-bottom-left-radius: 15px; /* Add border-radius to the bottom-left corner */
+    border-top-left-radius: 15px;
+    animation: fadeIn 0.75s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+.rightAboutCol:hover #boldedText {
+    font-weight: 300;
+}
+
+.rightAboutCol #boldedText {
+    transition: font-weight 0.1s ease;
+}
+
+.rightAboutCol:hover {
+    transform: translateX(-12em);
+    /* Slide to the left by 20px on hover */
+    box-shadow: 12em 0px #7ea3f1;
+    /* Blue box shadow on the right */
+}
+
+.rightAboutCol:hover #aboutMeHeader {
+    color: #7ea3f1;
+}
+
+.rightAboutCol:hover #aboutMeText {
+    color: #7ea3f1;
+}
+
+.rightAboutCol #aboutMeHeader {
+    transition: color 0.5s ease;
+}
+
+.rightAboutCol #aboutMeText {
+    transition: color 0.5s ease;
+}
+
+.aboutHeadSection,
+.leftAboutCol,
+.rightAboutCol {
+    opacity: 0;
+}
+
+.social-links ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove default padding */
+
+}
+
+.social-links li {
+    margin-bottom: 40px;
+    /* Space between each list item */
+    text-align: center;
+
+}
+
+.social-links a {
+    text-decoration: none;
+    /* Remove underline from links */
+    /* color: #007bff; */
+    font-weight: 300;
+    font-size: 1.35em;
+}
+
+#socials {
+    text-align: center;
+}
+
+.leftAboutCol:hover #socials h3 {
+    color: #7ea3f1;
+}
+
+#socials h3 {
+    font-weight: 100;
+    font-size: 4em;
+    /* color: white; */
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid white; /* Add underline */
+    display: inline-block; /* Ensure underline fits the text width */
+    transition: color 0.5s ease;
+}
+
+.social-button {
+    /* Bootstrap primary color or any color you prefer */
+    border: 1px solid white;
+    background-color: white;
+    /* color: white; */
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.social-button:hover {
+    background-color: #7ea3f1;
+}
+
+.social-button a {
+    /* color: white; */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+div #socials {
+    margin-top: 1em;
+}
