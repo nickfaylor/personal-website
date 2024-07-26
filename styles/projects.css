@@ -52,8 +52,8 @@
 }
 
 .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0px 15px #7ea3f1;
+    transform: translateY(-20px);
+    box-shadow: 0px 20px #7ea3f1;
 }
 
 .card-body p {
