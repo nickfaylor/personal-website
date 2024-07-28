@@ -1,18 +1,21 @@
 body {
-    background-color: #c7ccdb;
+    background-color: #282828;
     font-family: 'Kanit', sans-serif;
     font-weight: 200;
 }
 
 .primary-color {
-    background-color: #011638;
+    background-color: #282828;
 }
+
 .text-primary-color {
     color: white;
 }
+
 .text-secondary-color {
     color: #7ea3f1;
 }
+
 .text-third-color {
     color: #011638;
 }
@@ -22,6 +25,7 @@ body {
     /* background-color: #d0d6d6; */
     padding-top: 0;
     padding-bottom: 0;
+
 }
 
 .custom-navbar .nav-item {
@@ -34,7 +38,7 @@ body {
     padding-right: 45px;
     padding-top: 5px;
     padding-bottom: 5px;
-    
+
 }
 
 .nav-link {
@@ -57,7 +61,7 @@ body {
 }
 
 .aboutHeadSection {
-    margin-top: 8em;
+    margin-top: 4em;
     margin-bottom: 5em;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -67,6 +71,21 @@ body {
     transition: box-shadow 0.5s ease-out, transform 0.5s ease, background-color 0.5s ease;
     animation: fadeIn 1s ease-in-out forwards;
     animation-delay: 0.25s;
+    box-shadow:
+        3px 2.8px 2.8px rgba(126, 163, 241, 0.02),
+        -3px -2.8px 2.8px rgba(126, 163, 241, 0.02),
+        7.3px 6.7px 6.8px rgba(126, 163, 241, 0.037),
+        -7.3px -6.7px 6.8px rgba(126, 163, 241, 0.037),
+        13.8px 12.5px 12.8px rgba(126, 163, 241, 0.051),
+        -13.8px -12.5px 12.8px rgba(126, 163, 241, 0.051),
+        24.6px 22.3px 22.8px rgba(126, 163, 241, 0.062),
+        -24.6px -22.3px 22.8px rgba(126, 163, 241, 0.062),
+        46px 41.8px 42.6px rgba(126, 163, 241, 0.075),
+        -46px -41.8px 42.6px rgba(126, 163, 241, 0.075),
+        110px 100px 102px rgba(126, 163, 241, 0.11),
+        -110px -100px 102px rgba(126, 163, 241, 0.11);
+        /* border-top: 1px solid #7ea3f1;
+        border-bottom: 1px solid #7ea3f1; */
 }
 
 @media (max-width: 768px) {
@@ -94,6 +113,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -105,7 +125,14 @@ body {
 }
 
 .aboutHeadSection:hover {
-    box-shadow: 0px 10px #7ea3f1;
+    /* box-shadow: 0px 10px #7ea3f1; */
+    box-shadow:
+        3px 2.8px 2.8px rgba(126, 163, 241, 0.084),
+        7.3px 6.7px 6.8px rgba(126, 163, 241, 0.154),
+        13.8px 12.5px 12.8px rgba(126, 163, 241, 0.213),
+        24.6px 22.3px 22.8px rgba(126, 163, 241, 0.261),
+        46px 41.8px 42.6px rgba(126, 163, 241, 0.313),
+        110px 100px 102px rgba(126, 163, 241, 0.46);
     transform: translateY(-10px);
     /* background-color: #ced4da; */
     /* background-color: #d0d6d6; */
@@ -183,8 +210,10 @@ body {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     text-align: center;
-    border-bottom: 2px solid white; /* Add underline */
-    display: inline-block; /* Ensure underline fits the text width */
+    border-bottom: 2px solid white;
+    /* Add underline */
+    display: inline-block;
+    /* Ensure underline fits the text width */
 }
 
 #aboutMeText {
@@ -205,17 +234,32 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
-    border-top-right-radius: 15px; /* Add border-radius to the top-right corner */
+    border-top-right-radius: 15px;
+    /* Add border-radius to the top-right corner */
     border-bottom-right-radius: 15px;
     /* Smooth transition for transform and box-shadow */
     animation: fadeIn 0.75s ease-in-out forwards;
     animation-delay: 1s;
+    box-shadow:
+        3px 2.8px 2.8px rgba(126, 163, 241, 0.02),
+        -3px -2.8px 2.8px rgba(126, 163, 241, 0.02),
+        7.3px 6.7px 6.8px rgba(126, 163, 241, 0.037),
+        -7.3px -6.7px 6.8px rgba(126, 163, 241, 0.037),
+        13.8px 12.5px 12.8px rgba(126, 163, 241, 0.051),
+        -13.8px -12.5px 12.8px rgba(126, 163, 241, 0.051),
+        24.6px 22.3px 22.8px rgba(126, 163, 241, 0.062),
+        -24.6px -22.3px 22.8px rgba(126, 163, 241, 0.062),
+        46px 41.8px 42.6px rgba(126, 163, 241, 0.075),
+        -46px -41.8px 42.6px rgba(126, 163, 241, 0.075),
+        110px 100px 102px rgba(126, 163, 241, 0.11),
+        -110px -100px 102px rgba(126, 163, 241, 0.11);
+    
 }
 
 .leftAboutCol:hover {
     transform: translateX(12em);
     /* Slide to the right by 20px on hover */
-    box-shadow: -12em 0px #7ea3f1;
+    /* box-shadow: -12em 0px #7ea3f1; */
     /* Blue box shadow on the left */
 }
 
@@ -225,10 +269,25 @@ body {
     margin-left: 200px;
     /* background-color: #d0d6d6; */
     transition: transform 1s ease, box-shadow 1s ease;
-    border-bottom-left-radius: 15px; /* Add border-radius to the bottom-left corner */
+    border-bottom-left-radius: 15px;
+    /* Add border-radius to the bottom-left corner */
     border-top-left-radius: 15px;
     animation: fadeIn 0.75s ease-in-out forwards;
     animation-delay: 1.5s;
+    box-shadow:
+        3px 2.8px 2.8px rgba(126, 163, 241, 0.02),
+        -3px -2.8px 2.8px rgba(126, 163, 241, 0.02),
+        7.3px 6.7px 6.8px rgba(126, 163, 241, 0.037),
+        -7.3px -6.7px 6.8px rgba(126, 163, 241, 0.037),
+        13.8px 12.5px 12.8px rgba(126, 163, 241, 0.051),
+        -13.8px -12.5px 12.8px rgba(126, 163, 241, 0.051),
+        24.6px 22.3px 22.8px rgba(126, 163, 241, 0.062),
+        -24.6px -22.3px 22.8px rgba(126, 163, 241, 0.062),
+        46px 41.8px 42.6px rgba(126, 163, 241, 0.075),
+        -46px -41.8px 42.6px rgba(126, 163, 241, 0.075),
+        110px 100px 102px rgba(126, 163, 241, 0.11),
+        -110px -100px 102px rgba(126, 163, 241, 0.11);
+        
 }
 
 .rightAboutCol:hover #boldedText {
@@ -242,7 +301,7 @@ body {
 .rightAboutCol:hover {
     transform: translateX(-12em);
     /* Slide to the left by 20px on hover */
-    box-shadow: 12em 0px #7ea3f1;
+    /* box-shadow: 12em 0px #7ea3f1; */
     /* Blue box shadow on the right */
 }
 
@@ -304,8 +363,10 @@ body {
     font-size: 4em;
     /* color: white; */
     margin-bottom: 0.5em;
-    border-bottom: 2px solid white; /* Add underline */
-    display: inline-block; /* Ensure underline fits the text width */
+    border-bottom: 2px solid white;
+    /* Add underline */
+    display: inline-block;
+    /* Ensure underline fits the text width */
     transition: color 0.5s ease;
 }
 

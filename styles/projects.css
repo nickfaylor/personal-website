@@ -3,10 +3,24 @@
     margin-bottom: 100px;
     /* background-color: #d0d6d6; */
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow:
+        3px 2.8px 2.8px rgba(126, 163, 241, 0.02),
+        -3px -2.8px 2.8px rgba(126, 163, 241, 0.02),
+        7.3px 6.7px 6.8px rgba(126, 163, 241, 0.037),
+        -7.3px -6.7px 6.8px rgba(126, 163, 241, 0.037),
+        13.8px 12.5px 12.8px rgba(126, 163, 241, 0.051),
+        -13.8px -12.5px 12.8px rgba(126, 163, 241, 0.051),
+        24.6px 22.3px 22.8px rgba(126, 163, 241, 0.062),
+        -24.6px -22.3px 22.8px rgba(126, 163, 241, 0.062),
+        46px 41.8px 42.6px rgba(126, 163, 241, 0.075),
+        -46px -41.8px 42.6px rgba(126, 163, 241, 0.075),
+        110px 100px 102px rgba(126, 163, 241, 0.11),
+        -110px -100px 102px rgba(126, 163, 241, 0.11);
+        border-radius: 15px;
 }
 
 .projectsHeader:hover {
-    box-shadow: 0px 10px #7ea3f1;
+
     transform: translateY(-10px);
 }
 
